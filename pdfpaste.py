@@ -54,6 +54,20 @@ def save_pdf_from_clipboard(output_path="output.pdf"):
 
 
 if __name__ == "__main__":
+    # Handle help flag
+    if len(sys.argv) > 1 and sys.argv[1] in ['-h', '--help']:
+        print("pdfpaste - Save PDF from macOS clipboard to file")
+        print("")
+        print("Usage: pdfpaste [output.pdf]")
+        print("")
+        print("Examples:")
+        print("  pdfpaste structure.pdf      # Save to structure.pdf")
+        print("  pdfpaste structure          # Save to structure.pdf (auto .pdf)")
+        print("  pdfpaste                    # Save to output.pdf")
+        print("")
+        print(f"Default directory: {DEFAULT_DIR}")
+        sys.exit(0)
+    
     output_file = sys.argv[1] if len(sys.argv) > 1 else "output.pdf"
     
     # If only filename (no path), use default directory

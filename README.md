@@ -18,7 +18,20 @@ Save PDF from macOS clipboard to file. Particularly useful for ChemDraw and othe
 - Python 3.6+
 - PyObjC (for clipboard access)
 
-### Install
+### Method 1: Homebrew (Recommended)
+
+```bash
+# Add the tap
+brew tap YOUR_USERNAME/pdfpaste
+
+# Install
+brew install pdfpaste
+
+# Done! Use it:
+pdfpaste structure.pdf
+```
+
+### Method 2: Direct Install
 
 ```bash
 # 1. Download pdfpaste.py
@@ -32,6 +45,14 @@ chmod +x pdfpaste.py
 
 # 4. Move to PATH (optional)
 sudo mv pdfpaste.py /usr/local/bin/pdfpaste
+```
+
+### Method 3: Quick Installer
+
+```bash
+git clone https://github.com/YOUR_USERNAME/pdfpaste.git
+cd pdfpaste
+./install.sh
 ```
 
 ### Quick Setup with Alias
