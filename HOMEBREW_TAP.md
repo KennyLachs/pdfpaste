@@ -19,13 +19,13 @@ A tap is a third-party repository that allows users to install your formula with
 
 ```bash
 # Clone your tap repository
-git clone https://github.com/YOUR_USERNAME/homebrew-pdfpaste.git
+git clone https://github.com/KennyLachs/homebrew-pdfpaste.git
 cd homebrew-pdfpaste
 
 # Copy the formula
 cp ~/pdfpaste-repo/Formula/pdfpaste.rb ./pdfpaste.rb
 
-# Edit the formula - update YOUR_USERNAME and SHA256
+# Edit the formula - update KennyLachs and SHA256
 # (see step 3 below for getting SHA256)
 
 # Commit and push
@@ -40,7 +40,7 @@ First, push your main pdfpaste repository:
 
 ```bash
 cd ~/pdfpaste-repo
-git remote add origin https://github.com/YOUR_USERNAME/pdfpaste.git
+git remote add origin https://github.com/KennyLachs/pdfpaste.git
 git push -u origin main
 
 # Create a tag
@@ -57,7 +57,7 @@ Then on GitHub:
 
 Get the SHA256:
 ```bash
-curl -L https://github.com/YOUR_USERNAME/pdfpaste/archive/refs/tags/v1.0.0.tar.gz | shasum -a 256
+curl -L https://github.com/KennyLachs/pdfpaste/archive/refs/tags/v1.0.0.tar.gz | shasum -a 256
 ```
 
 ### 4. Update the Formula
@@ -67,8 +67,8 @@ Edit `pdfpaste.rb` in your `homebrew-pdfpaste` repository:
 ```ruby
 class Pdfpaste < Formula
   desc "Save PDF from macOS clipboard to file (ChemDraw support)"
-  homepage "https://github.com/YOUR_USERNAME/pdfpaste"
-  url "https://github.com/YOUR_USERNAME/pdfpaste/archive/refs/tags/v1.0.0.tar.gz"
+  homepage "https://github.com/KennyLachs/pdfpaste"
+  url "https://github.com/KennyLachs/pdfpaste/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "PUT_ACTUAL_SHA256_HERE"  # ← Update this!
   license "MIT"
   # ... rest of formula
@@ -81,7 +81,7 @@ Commit and push the update.
 
 ```bash
 # Add your tap
-brew tap YOUR_USERNAME/pdfpaste
+brew tap KennyLachs/pdfpaste
 
 # Install
 brew install pdfpaste
@@ -95,12 +95,12 @@ pdfpaste structure.pdf
 After setup, users can install with just:
 
 ```bash
-brew install YOUR_USERNAME/pdfpaste/pdfpaste
+brew install KennyLachs/pdfpaste/pdfpaste
 ```
 
 Or:
 ```bash
-brew tap YOUR_USERNAME/pdfpaste
+brew tap KennyLachs/pdfpaste
 brew install pdfpaste
 ```
 

@@ -1,8 +1,8 @@
 class Pdfpaste < Formula
   desc "Save PDF from macOS clipboard to file (ChemDraw support)"
-  homepage "https://github.com/YOUR_USERNAME/pdfpaste"
-  url "https://github.com/YOUR_USERNAME/pdfpaste/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "REPLACE_WITH_ACTUAL_SHA256"
+  homepage "https://github.com/KennyLachs/pdfpaste"
+  url "https://github.com/KennyLachs/pdfpaste/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "aba7570b6077149c263cf00bde00279ca23ad11baba717262032df17685d3556"
   license "MIT"
 
   depends_on :macos

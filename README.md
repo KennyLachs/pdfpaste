@@ -22,7 +22,7 @@ Save PDF from macOS clipboard to file. Particularly useful for ChemDraw and othe
 
 ```bash
 # Add the tap
-brew tap YOUR_USERNAME/pdfpaste
+brew tap KennyLachs/pdfpaste
 
 # Install
 brew install pdfpaste
@@ -35,7 +35,7 @@ pdfpaste structure.pdf
 
 ```bash
 # 1. Download pdfpaste.py
-curl -O https://raw.githubusercontent.com/YOUR_USERNAME/pdfpaste/main/pdfpaste.py
+curl -O https://raw.githubusercontent.com/KennyLachs/pdfpaste/main/pdfpaste.py
 
 # 2. Install PyObjC
 pip3 install pyobjc-framework-Cocoa
@@ -50,7 +50,7 @@ sudo mv pdfpaste.py /usr/local/bin/pdfpaste
 ### Method 3: Quick Installer
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pdfpaste.git
+git clone https://github.com/KennyLachs/pdfpaste.git
 cd pdfpaste
 ./install.sh
 ```

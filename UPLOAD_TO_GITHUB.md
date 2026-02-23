@@ -15,15 +15,15 @@
 ```bash
 cd ~/pdfpaste-repo
 
-# Add GitHub as remote (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/pdfpaste.git
+# Add GitHub as remote (replace KennyLachs with your GitHub username)
+git remote add origin https://github.com/KennyLachs/pdfpaste.git
 
 # Push to GitHub
 git push -u origin main
 ```
 
 3. **Done!** Your repository is now live at:
-   `https://github.com/YOUR_USERNAME/pdfpaste`
+   `https://github.com/KennyLachs/pdfpaste`
 
 ## Alternative: Using GitHub Desktop
 
@@ -44,14 +44,14 @@ git push -u origin main
 
 Others can install with:
 ```bash
-git clone https://github.com/YOUR_USERNAME/pdfpaste.git
+git clone https://github.com/KennyLachs/pdfpaste.git
 cd pdfpaste
 ./install.sh
 ```
 
 Or one-liner:
 ```bash
-curl -O https://raw.githubusercontent.com/YOUR_USERNAME/pdfpaste/main/pdfpaste.py
+curl -O https://raw.githubusercontent.com/KennyLachs/pdfpaste/main/pdfpaste.py
 pip3 install pyobjc-framework-Cocoa
 chmod +x pdfpaste.py
 ```
